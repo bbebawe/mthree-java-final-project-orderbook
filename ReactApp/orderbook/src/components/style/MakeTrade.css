@@ -1,0 +1,26 @@
+.form-control {
+    text-align: left;
+}
+
+#price-input, #quantity-input {
+    width: 100%;
+}
+
+#price-col {
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+#quantity-col {
+    padding-right: 0;
+    padding-left: 10px;
+}
+
+#quantity-input, #offer-bid-drpdwn {
+    margin-bottom: 1rem;
+}
+
+#place-order-col {
+    text-align: right;
+    padding-left: 0;
+}

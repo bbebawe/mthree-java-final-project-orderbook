@@ -1,0 +1,41 @@
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <timestamp key="byDay" datePattern="yyyyMMdd"/>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="APPLICATION_FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/application/log-${byDay}.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="API_FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/api/log-${byDay}.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="DATABASE_FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/database/log-${byDay}.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="com.mthree.orderbook.interceptor" level="INFO" additivity="false">
+        <appender-ref ref="API_FILE"/>
+    </logger>
+    <logger name="org.hibernate.SQL" level="DEBUG" additivity="false">
+        <appender-ref ref="DATABASE_FILE"/>
+    </logger>
+    <root level="info">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="APPLICATION_FILE"/>
+    </root>
+</configuration>

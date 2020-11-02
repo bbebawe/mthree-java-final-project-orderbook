@@ -1,0 +1,36 @@
+#update_btns {
+    text-align: center;
+}
+
+#fetched {
+    text-align: right;
+    padding-left: 0;
+}
+#middle {
+    border-right: 1px solid grey;
+}
+
+#modal_head {
+    margin: auto;
+    width: fill;
+    text-align: center;
+}
+
+.col-12 {
+    font-weight: 500;
+}
+
+.col-sm-3 {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+
+label {
+    vertical-align: middle;
+    margin-bottom: none;
+}
+
+#modalform {
+    text-align: right;
+}

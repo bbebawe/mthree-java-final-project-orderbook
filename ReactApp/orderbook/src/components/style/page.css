@@ -1,0 +1,258 @@
+/* login styles
+===============*/
+.login-form {
+  background-color: #c4c4c4;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid white;
+  box-shadow: #474e78 0 0 20px;
+  border-radius: 5px;
+  padding: 20px;
+  min-width: 380px;
+}
+.login-form button {
+  width: 100%;
+}
+
+#update-modal {
+  z-index: 100;
+}
+
+#grab:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.login-info {
+  background-color: #6d77b0;
+}
+
+#logout-btn {
+  background-color: #4c6f88;
+  border: none;
+  border-radius: 5px;
+  height: 20px;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+.login-spinner {
+  width: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* stock, Activity, Trade styles
+================================ */
+.stock-info-col,
+.activity-col,
+.trade-col {
+  background-color: #6d77b0;
+  height: 250px;
+}
+.stock-info-col {
+  border: 0 !important;
+}
+
+.stock-info-col,
+.activity-col {
+  padding: 20px;
+}
+
+.activity-col,
+.trade-col {
+  padding: 30px;
+  border-left: 5px solid #474e78;
+  border-right: 0 !important;
+}
+
+.trades-row {
+  margin-bottom: 30px;
+  min-height: calc(100vh - 500px);
+}
+
+#quantity-input,
+#offer-bid-drpdwn,
+#price-input {
+  border: 3px solid #474e78;
+}
+
+.data-table {
+  min-height: 100%;
+}
+
+.login-error {
+  margin: 5px auto;
+  padding: 5px;
+  border-radius: 25px;
+  text-align: center;
+  font-weight: bold;
+  color: #d8000c;
+  width: 100%;
+}
+
+/* login styles
+===============*/
+
+.Column4 {
+  border: 0 !important;
+  background-color: #6d77b0;
+}
+
+.Column5 {
+  border: 0 !important;
+  /* background-color: #45A29E; */
+  /* background-color:#E27D60; */
+  background-color: #6d77b0;
+}
+
+.title {
+  color: white;
+}
+
+.Line1,
+.Line2 {
+  border-color: #474e78 !important;
+  border-width: 4px !important;
+}
+
+.btn {
+  background-color: #474e78 !important;
+  border: none !important;
+  border-radius: 5px !important;
+  height: 40px !important;
+  text-align: center !important;
+}
+
+.btn-secondary {
+  margin-top: 1rem;
+}
+
+.DefaultTable {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  line-height: 45px;
+}
+
+.buyPrice {
+  background-color: rgb(71, 250, 86, 0.5);
+  width: 150px;
+}
+
+.sellPrice {
+  background-color: #ff636393;
+  width: 150px;
+}
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 500px;
+  overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+  display: block;
+}
+
+tr:nth-child(even) {
+  text-align: center;
+  /* background-color: rgba(150, 201, 238, 0.75); */
+  background-color: #96a1e3;
+  color: black;
+}
+
+th,
+td {
+  border-bottom: 1px solid #474e78;
+  position: sticky;
+  top: 0;
+}
+th {
+  z-index: 4;
+  /* background-color: rgb(85, 122, 149, 1); */
+  background-color: #474e78;
+}
+
+tr {
+  border: black !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #96a1e3;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5b628c;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #474e78;
+  border-radius: 10px;
+}
+
+.vl {
+  border-left: solid #5b628c;
+  border-left-width: 100px;
+  position: absolute;
+  left: 100%;
+  margin-left: -4px;
+  top: 15px;
+  bottom: 15px;
+}
+
+.v2 {
+  border-left: solid #4c6f88;
+  border-left-width: 100px;
+  position: absolute;
+  left: 100%;
+  margin-left: -4px;
+  top: 15px;
+  bottom: 255px;
+}
+
+.text-left-right {
+  text-align: right;
+  position: relative;
+}
+
+.left-text {
+  left: 0;
+  position: absolute;
+  font-weight: bold;
+}
+
+h4 {
+  font-weight: bolder;
+  text-align: center;
+}
+
+.tableTitle {
+  font-weight: bolder;
+}
+
+.apexcharts-legend {
+  max-height: 0vh;
+}
+
+@media screen and (min-width: 769px) {
+  /* stock, Activity, Trade styles
+================================= */
+  .stock-info-col,
+  .activity-col {
+    border-right: 5px solid #4c6f88;
+    border-bottom: none;
+  }
+}

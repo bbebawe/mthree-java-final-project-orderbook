@@ -1,0 +1,31 @@
+.currentStock {
+    border: solid #5b628c 10px;
+    border-radius: 5px;
+    background-color: #5b628c;
+    margin-bottom: 0.2rem;
+}
+
+.stock-span {
+ margin-left: 30px;
+}
+
+.selected-span {
+ margin-right: 10px;
+}
+
+#get-btn {
+    margin-left: auto;
+    text-align: right;
+}
+
+#error-message {
+    color: rgba(138, 78, 9, 0.925);
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+#button-col {
+    padding-left: 0;
+    height: 4.4rem;
+}
